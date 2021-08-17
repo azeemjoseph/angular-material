@@ -1,0 +1,51 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.example-half-width {
+  width: 50%;
+}
+
+mat-card {
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.background {
+
+  &:after {
+    content: '';
+    background: #36d2da;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 80%;
+    right: 0;
+}
+&:before {
+    content: '';
+    background: rgb(81, 98, 196);
+    position: absolute;
+    top: 20%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+}
+
+mat-form-field {
+  display: block;
+}
+
+.mat-card-title {
+  color: brown;
+}
+
+

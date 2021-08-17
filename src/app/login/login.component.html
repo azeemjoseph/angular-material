@@ -1,0 +1,47 @@
+<div class="center-card background">
+  <mat-card class="example-half-width">
+    <mat-card-title>Login</mat-card-title>
+  <form  [formGroup]="loginForm" class="example-form" >
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="email" formControlName="emailID" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" >
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="password" formControlName="password" required>
+    </mat-form-field>
+
+          <button [disabled]="!loginForm.valid" mat-raised-button color="primary" (click)="onLogin()" >Login</button>
+          &nbsp;
+          <button  mat-raised-button color="primary" (click)="signUp()">Sign Up</button>
+  </form>
+
+</mat-card>
+</div>
+
+<!-- <div class="center-card">
+  <mat-card>
+    <mat-card-content>
+      <form class="example-form" [formGroup]="form">
+        <h2>Log In</h2>
+        <mat-error *ngIf="!loginInvalid">
+          The username and password were not recognized
+        </mat-error>
+        <mat-form-field class="example-full-width" >
+          <input matInput placeholder="Email" formControlName="username" required>
+          <mat-error>
+            Please provide a valid email address
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width" >
+          <input matInput type="password" placeholder="Password" formControlName="password" required>
+          <mat-error>
+            Please provide a valid password
+          </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary">Sign Up</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  </div> -->

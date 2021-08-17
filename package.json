@@ -9,16 +9,35 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azeemjoseph/angular-material.git"
+  },
+  "keywords": [
+    "angular",
+    "templete",
+    "material",
+    "templete"
+  ],
+  "author": "Azeem Joseph",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azeemjoseph/angular-material/issues"
+  },
+  "homepage": "https://github.com/azeemjoseph/angular-material#readme",
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.3",
+    "@angular/cdk": "^9.2.4",
     "@angular/common": "~9.1.3",
     "@angular/compiler": "~9.1.3",
     "@angular/core": "~9.1.3",
     "@angular/forms": "~9.1.3",
+    "@angular/material": "^9.2.4",
     "@angular/platform-browser": "~9.1.3",
     "@angular/platform-browser-dynamic": "~9.1.3",
     "@angular/router": "~9.1.3",
+    "@ngneat/until-destroy": "^8.1.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
